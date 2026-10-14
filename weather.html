@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body{
+            background-color: rgb(77, 77, 255);
+            background-image: radial-gradient(circle, white 2px, transparent 3px);
+            background-repeat: repeat;
+            background-size: 40px 40px;
+            background-attachment: fixed;
+            
+            
+        }
+        header{
+            color: antiquewhite;
+            font-family: cursive;
+            text-align: center;
+        }
+        .today{
+            background-color: lightskyblue;
+            padding: 3px;
+            border-radius: 10px;
+            width: 400px;
+        }
+        @keyframes floatCloud {
+      from {
+        transform: translateY(0);
+      }
+ 
+      to {
+        transform: translateY(20px);
+      }
+    }
+    #weather-tdy{
+        animation: floatCloud 3s infinite alternate;
+        font-size: 85px;
+    }
+    @keyframes twinkle{
+        from {color:antiquewhite}
+        to {color:rgb(252, 252, 135)}
+    }
+    #temp-tdy{
+        animation: twinkle 3s infinite alternate;
+        font-size: 75px;
+    }
+    .table-week{
+        background-color: rgb(69, 186, 232);
+        border-radius: 10px;
+        padding: 5px;
+        padding-left: 20px;
+        width: 350px;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Your Weather App</h1>
+    <h4>Check the weather before you head out!</h4>
+    </header>
+    <div class="today">
+        <h3 style="text-align: left;">Monday</h3>
+        <h3>Weather today is:</h3>
+        <h1 id="weather-tdy" >Partly Cloudy</h1>
+        <h3>The temperature today is:</h3>
+        <h1 id="temp-tdy">22°C</h1>
+    </div>
+<br><br><br>
+    <div class="table-week">
+        <h2>Rest of the week</h2>
+        <table border="3px">
+            <tr>
+            <th>Day of week</th>
+            <th>Temperature</th>
+            <th>Weather</th>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td>19°C</td>
+                <td>Cloudy</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td>21°C</td>
+                <td>Rainy</td>
+            </tr>
+            <tr>
+                <th>Thursday</th>
+                <td>18°C</td>
+                <td>Rainy</td>
+            </tr>
+            <tr>
+                <th>Friday</th>
+                <td>22°C</td>
+                <td>Sunny</td>
+            </tr>
+            <tr>
+                <th>Saturday</th>
+                <td>23°C</td>
+                <td>Sunny</td>
+            </tr>
+            <tr>
+                <th>Sunday</th>
+                <td>24°C</td>
+                <td>Sunny</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
